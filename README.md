@@ -19,7 +19,7 @@ This repository contains solutions to a variety of algorithm and data structure 
 ## Technologies Used
 
 - **JavaScript**: For solving HackerRank problems.
-- **TypeScript**: For solving LeetCode problems.
+- **TypeScript**: For solving LeetCode/HackerRank problems.
 - **babel-jest**: Test's transformer module for JavaScript.
 - **ts-jest**: Test's transformer module for TypeScript.
 
@@ -47,8 +47,8 @@ algo-and-ds/
 ```
 
 - `<fileName>.js`: Contains JavaScript solutions for HackerRank problems.
-- `<fileName>.ts`: Contains TypeScript solutions for LeetCode problems.
-- `<fileName>.test.ts`: Contains test cases for LeetCode problems.
+- `<fileName>.ts`: Contains TypeScript solutions for LeetCode/HackerRank problems.
+- `<fileName>.test.ts`: Contains test cases for LeetCode/HackerRank problems.
 
 ## Getting Started
 
