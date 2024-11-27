@@ -1,15 +1,19 @@
 const findChampion = (n: number, edges: number[][]): number => {
-  const candidates = new Set<number>();
   const losers = new Set<number>();
-  for (const [team1, team2] of edges) {
-    candidates.add(team1);
+  for (const [, team2] of edges) {
     losers.add(team2);
   }
-  const filtered = Array.from(candidates).filter((el) => !losers.has(el));
-  if (filtered.length === 1) {
-    return filtered[0];
+
+  let champion = -1;
+  for (let i = 0; i < n; i++) {
+    if (!losers.has(i)) {
+      if (champion !== -1) {
+        return -1;
+      }
+      champion = i;
+    }
   }
-  return -1;
+  return champion;
 };
 
 export default findChampion;
