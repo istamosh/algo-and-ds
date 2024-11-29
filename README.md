@@ -1,6 +1,6 @@
 # Algorithm and Data Structures
 
-Welcome to the **Algorithm and Data Structures** repository! This repository is dedicated to solving various problems from HackerRank and LeetCode. The solutions are implemented in JavaScript and TypeScript.
+Welcome to the **Algorithm and Data Structures** repository! This repository is dedicated to solving various problems from HackerRank, LeetCode, and CodeWars. The solutions are implemented in JavaScript and TypeScript.
 
 ## Table of Contents
 
@@ -14,12 +14,12 @@ Welcome to the **Algorithm and Data Structures** repository! This repository is 
 
 ## Introduction
 
-This repository contains solutions to a variety of algorithm and data structure problems from popular coding platforms like HackerRank and LeetCode. The goal is to provide efficient and well-documented solutions to help others understand and learn different approaches to solving these problems.
+This repository contains solutions to a variety of algorithm and data structure problems from popular coding platforms like HackerRank, LeetCode, and CodeWars. The goal is to provide efficient and well-documented solutions to help others understand and learn different approaches to solving these problems.
 
 ## Technologies Used
 
-- **JavaScript**: For solving HackerRank problems.
-- **TypeScript**: For solving LeetCode/HackerRank problems.
+- **JavaScript**: For solving problems from various platforms.
+- **TypeScript**: For solving problems from various platforms.
 - **babel-jest**: Test's transformer module for JavaScript.
 - **ts-jest**: Test's transformer module for TypeScript.
 
@@ -46,9 +46,9 @@ algo-and-ds/
 └── ...
 ```
 
-- `<fileName>.js`: Contains JavaScript solutions for HackerRank problems.
-- `<fileName>.ts`: Contains TypeScript solutions for LeetCode/HackerRank problems.
-- `<fileName>.test.ts`: Contains test cases for LeetCode/HackerRank problems.
+- `<fileName>.js`: Contains JavaScript solutions for problems.
+- `<fileName>.ts`: Contains TypeScript solutions for problems.
+- `<fileName>.test.ts`: Contains test cases for problems.
 
 ## Getting Started
 
