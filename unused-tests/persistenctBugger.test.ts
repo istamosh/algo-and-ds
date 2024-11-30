@@ -1,5 +1,5 @@
 import { assert } from "chai";
-import persistence from "../src/persistence";
+import persistence from "../src/persistentBugger";
 
 describe("Persistence Function", () => {
   it("should return 0 for single digit numbers", () => {
