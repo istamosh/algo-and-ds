@@ -1,6 +1,6 @@
 # Algorithm and Data Structures
 
-Welcome to the **Algorithm and Data Structures** repository! This repository is dedicated to solving various problems from HackerRank, LeetCode, and CodeWars. The solutions are implemented in JavaScript and TypeScript.
+Welcome to the **Algorithm and Data Structures** repository! This repository is dedicated to solving various problems from HackerRank, LeetCode, and CodeWars. The solutions are implemented in JavaScript, TypeScript, and SQL.
 
 ## Table of Contents
 
@@ -20,6 +20,7 @@ This repository contains solutions to a variety of algorithm and data structure 
 
 - **JavaScript**: For solving problems from various platforms.
 - **TypeScript**: For solving problems from various platforms.
+- **SQL**: For practicing database queries.
 - **babel-jest**: Test's transformer module for JavaScript.
 - **ts-jest**: Test's transformer module for TypeScript.
 
@@ -41,6 +42,7 @@ algo-and-ds/
 │   ├── problem3.test.js
 │   ├── problem4.test.ts
 │   └── ...
+├── queries.sql
 ├── README.md
 ├── package.json
 └── ...
@@ -49,6 +51,7 @@ algo-and-ds/
 - `<fileName>.js`: Contains JavaScript solutions for problems.
 - `<fileName>.ts`: Contains TypeScript solutions for problems.
 - `<fileName>.test.ts`: Contains test cases for problems.
+- `queries.sql`: Contains SQL queries for database practice.
 
 ## Getting Started
 
