@@ -28,3 +28,23 @@ SELECT (COUNT(CITY)-COUNT(DISTINCT CITY)) FROM STATION;
 -- Display the city with the shortest name length and the city with the longest name length from the STATION table and order by alphabet.
 SELECT CITY, CHAR_LENGTH(CITY) FROM STATION WHERE CHAR_LENGTH(CITY) = (SELECT MIN(CHAR_LENGTH(CITY)) FROM STATION) ORDER BY CITY ASC LIMIT 1;
 SELECT CITY, CHAR_LENGTH(CITY) FROM STATION WHERE CHAR_LENGTH(CITY) = (SELECT MAX(CHAR_LENGTH(CITY)) FROM STATION) ORDER BY CITY ASC LIMIT 1;
+
+-- Display unique city names from station that starts with vowel alphabets (case insensitive)
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[aeiou]';
+
+-- Display unique cities that ends with vowel alphabets
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '[aeiou]$';
+
+-- Both starts and ends with vowels
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[aeiou]' AND CITY REGEXP '[aeiou]$';
+-- OR
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[aeiou].*[aeiou]$';
+
+-- Select unique cities that starts and ends without vowels
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[^aeiou].*[^aeiou]$';
+
+-- Select unique cities that starts or ends without vowels
+SELECT DISTINCT CITY FROM STATION WHERE CITY REGEXP '^[^aeiou]|[^aeiou]$';
+
+-- Query the student names in STUDENTS who scored > 75. Order your output by the last three characters of each name ASC. If two or more students both have names ending in the same last three characters (i.e.: Bobby, Robby, etc.), secondary sort them by ascending ID.
+SELECT NAME FROM STUDENTS WHERE MARKS > 75 ORDER BY RIGHT(NAME, 3) ASC, ID ASC;
